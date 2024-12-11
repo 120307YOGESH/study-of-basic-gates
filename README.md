@@ -1,4 +1,4 @@
-### study-of-basic-gates
+![Screenshot 2024-12-11 133600](https://github.com/user-attachments/assets/6c247b66-f1c6-4a88-99c3-b47ca7cc326f)### study-of-basic-gates
 
 **AIM:** 
 
@@ -63,17 +63,44 @@ Y= A⊕B
 
 
 **PROGRAM**
+GATE LEVEL MODEL:
+module log_gat(a,b,c1,c2,c3,c4,c5,c6,c7);
+input a,b;
+output c1,c2,c3,c4,c5,c6,c7;
+not g1(c1,a);
+and g2(c2,a,b);
+or g3(c3,a,b);
+nand g4(c4,a,b);
+nor g5(c5,a,b);
+xor g6(c6,a,b);
+xnor g7(c7,a,b);
+endmodule
 
+ DATA FLOW MODEL:
+module logic_gates(a, b, c1, c2, c3, c4, c5, c6, c7);
+    input a, b;
+    output c1, c2, c3, c4, c5, c6, c7;
+    assign c1 = ~a;
+    assign c2 = a & b;
+    assign c3 = a | b;
+    assign c4 = ~(a & b);
+    assign c5 = ~(a | b);
+    assign c6 = a ^ b;
+    assign c7 = ~(a ^ b);
+endmodule
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: RegisterNumber: 
+ Developed by: RegisterNumber: 24001573
  
 **Logic symbol & Truthtable**
+![Screenshot 2024-12-11 133455](https://github.com/user-attachments/assets/a7d90e18-9862-455c-9de7-324280d2f783)
 
 **RTL realization Output:** 
+![Screenshot 2024-12-11 133600](https://github.com/user-attachments/assets/d5214e24-d612-455d-8a0b-ff43f3903ca2)
 
 **RTL**
+![Screenshot 2024-12-11 133656](https://github.com/user-attachments/assets/d89c3ab7-ed49-46bb-b9fb-9cac249270c0)
 
 **Result:**
-
+Thus the different IC's are studied and truth table for logic gates are verified.
 
